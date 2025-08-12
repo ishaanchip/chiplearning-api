@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 
 const corsOptions = {
-   origin:process.env.ORIGIN,
+   origin:["https://www.chiplearning.org", process.env.PORT],
    credentials:true,
    optionSuccessStatus:200,
    methods: ["GET", "POST", "PUT", "DELETE"],
