@@ -106,37 +106,37 @@ const schemas = require("../models/schema");
                 const tutorAccountTimingInsert = {
                     monday: {
                         available: true,
-                        slots: ["8:00 A.M", "10:00 A.M", "5:00 P.M"]
+                        slots: ["3:00 P.M", "4:00 P.M", "5:00 P.M","6:00 P.M", "7:00 P.M", "8:00 P.M"]
                     },
                     tuesday: {
-                        available: false,
-                        slots: []
+                        available: true,
+                        slots: ["3:00 P.M", "4:00 P.M", "5:00 P.M","6:00 P.M", "7:00 P.M", "8:00 P.M"]
                     },
                     wednesday: {
                         available: true,
-                        slots: ["9:00 A.M", "1:00 P.M", "4:00 P.M"]
+                        slots: ["3:00 P.M", "4:00 P.M", "5:00 P.M","6:00 P.M", "7:00 P.M", "8:00 P.M"]
                     },
                     thursday: {
                         available: true,
-                        slots: ["7:00 A.M", "11:00 A.M"]
+                        slots: ["3:00 P.M", "4:00 P.M", "5:00 P.M","6:00 P.M", "7:00 P.M", "8:00 P.M"]
                     },
                     friday: {
-                        available: false,
-                        slots: []
+                        available: true,
+                        slots: ["3:00 P.M", "4:00 P.M", "5:00 P.M","6:00 P.M", "7:00 P.M", "8:00 P.M"]
                     },
                     saturday: {
                         available: true,
-                        slots: ["10:00 A.M", "12:00 P.M", "3:00 P.M"]
+                        slots: ["2:00 P.M", "3:00 P.M", "4:00 P.M", "5:00 P.M", "6:00 P.M", "7:00 P.M"]
                     },
                     sunday: {
-                        available: false,
-                        slots: []
+                        available: true,
+                        slots: ["2:00 P.M", "3:00 P.M", "4:00 P.M", "5:00 P.M", "6:00 P.M", "7:00 P.M"]
                     }
                 };
                 
     
                 const result = await tutorQuery.updateOne(
-                    {email:"ishaanchip@gmail.com"},
+                    {email:"ishaanchiplunkar@gmail.com"},
                     {$set: {updated_availability: tutorAccountTimingInsert}}
                 )
     
