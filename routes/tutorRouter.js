@@ -64,6 +64,8 @@ const schemas = require("../models/schema");
                 fields,
                 history,
                 availability, 
+                updated_availability,
+                locations
             } = req.body
 
             const tutorQuery = schemas.tutorAccounts;
@@ -75,8 +77,8 @@ const schemas = require("../models/schema");
                 reviews:reviews,
                 tutor_info:tutor_info,
                 fields:fields,
-                history:history,
-                availability:availability, 
+                updated_availability:updated_availability,
+                locations:locations,
             }
 
             const newTutorAccount = new tutorQuery(tutorAccountInsert)

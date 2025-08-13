@@ -32,6 +32,7 @@ const tutorAccountSchema = new mongoose.Schema({
     fields: [String],
     current_sessions:[Number],
     past_sessions:[Number],
+    locations:[String],
     availability: Object,
     updated_availability: Object,
   });
